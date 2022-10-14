@@ -83,7 +83,7 @@ public class Home {
     public static void inputEmail(WebDriver driver, String data) {
         getEmail(driver).sendKeys(data);
     }
-    // password
+
     public static WebElement getPassword(WebDriver driver) {
         return driver.findElement(By.xpath(PASSWORD_XPATH));
     }
@@ -111,46 +111,14 @@ public class Home {
     public static boolean LoginTest(WebDriver driver) {
         String url = driver.getCurrentUrl();
         if (url.equalsIgnoreCase(URL_TEST)) {
-            System.out.println("Logovanje uspesno.");
+            System.out.println("Uspesno logovanje.");
             return true;
         } else {
-            System.out.println("Logovanje neuspesno.");
+            System.out.println("Neuspesno logovanje.");
             System.out.println(url);
             return false;
         }
     }
 
-//    public static WebElement getEmailUser(WebDriver driver) {
-//        return driver.findElement(By.xpath(USEREMAIL_XPATH));
-//    }
-//
-//    public static void clickEmailUser(WebDriver driver) {
-//        getEmailUser(driver).click();
-//    }
-//
-//    public static void enterEmailUser(WebDriver driver, String data) {
-//        getEmailUser(driver).sendKeys(data);
-//    }
-
-//    public static WebElement getPassField(WebDriver driver) {
-//        return driver.findElement(By.xpath(PASSWRD_XPATH));
-//    }
-//
-//    public static void clickPassField(WebDriver driver) {
-//        getPassField(driver).click();
-//    }
-//
-//    public static void enterPassField(WebDriver driver, String data) {
-//        getPassField(driver).sendKeys(data);
-//    }
-//
-//    // Confirm Log In
-//    public static WebElement getlogInBtn(WebDriver driver) {
-//        return driver.findElement(By.xpath(CONFIRMLOGIN_XPATH));
-//    }
-//
-//    public static void clicklogInbtn(WebDriver driver) {
-//        getlogInBtn(driver).click();
-//    }
 }
 

@@ -6,16 +6,16 @@ import org.openqa.selenium.WebElement;
 
 public class Profile {
 
-    public static final String URL = "https://srbijainc.humanity.com/app/dashboard/";
+    public static final String URL = "https://marijajovanovic1.humanity.com/app/dashboard/";
     private static final String PROFILE_XPATH = "//img[@id='tr_avatar']";
     private static final String PROFILE_LINK_XPATH = "//a[contains(text(),'Profile')]";
-    private static final String SETTINGS_LINK_XPATH = "//a[@href='https://srbijainc.humanity.com/app/staff/edit/5093157/'][contains(text(),'Settings')]";
-    private static final String AVAILABILITY_LINK_XPATH = "//a[@href='https://srbijainc.humanity.com/app/staff/availability/5093157/']";
+    private static final String SETTINGS_LINK_XPATH = "//a[@href='https://marijajovanovic1.humanity.com/app/staff/edit/5093157/'][contains(text(),'Settings')]";
+    private static final String AVAILABILITY_LINK_XPATH = "//a[@href='https://marijajovanovic1.humanity.com/app/staff/availability/5093157/']";
     private static final String SIGN_OUT_XPATH = "//a[contains(text(),'Sign Out')]";
     private static final String VERSION_XPATH = "//div[@id='humanityAppVersion']";
     private static final String EDIT_DETAILS_XPATH = "//a[contains(text(),'Edit Details')]";
     private static final String SAVE_CHG_XPATH = "//td[@colspan='2']//input[@value='Save Employee']";
-    private static final String NO_AVATAR_URL = "https://d3l54fgzztlejs.cloudfront.net/app/layout/images/no_avatar.png";
+
 
 
     public static WebElement getDetails(WebDriver driver) {

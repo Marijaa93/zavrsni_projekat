@@ -15,18 +15,18 @@ public class TestSelectSettings {
                 "C:\\Users\\Nenad\\Desktop\\Chrome drive\\chromedriver.exe");
         WebDriver driver = new ChromeDriver();
 
-        String zemlja = "Serbia";
-        String jezik = "Serbian (machine)";
-        String vreme = "24 hour";
+        String country = "Serbia";
+        String language = "Serbian (machine)";
+        String time = "24 hour";
 
         try {
            Home.Login(driver, "mayaj93@gmail.com", "maja123");
             Thread.sleep(1000);
             Menu.clickSettings(driver);
             Thread.sleep(1000);
-            Settings.SelectAll(driver, zemlja, jezik, vreme);
+            Settings.SelectAll(driver, country, language, time);
             Thread.sleep(1000);
-            Assert.assertTrue(Settings.SelectAll(driver, zemlja, jezik, vreme));
+            Assert.assertTrue(Settings.SelectAll(driver, country, language, time));
         } catch (Exception e) {
             System.out.println(e.toString());
         } finally {

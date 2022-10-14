@@ -6,7 +6,7 @@ import org.openqa.selenium.WebElement;
 
 public class EditStaff {
 
-    public static final String URL="https://srbijainc.humanity.com/app/staff/detail/5093157/";
+    public static final String URL="https://marijajovanovic1.humanity.com/app/staff/detail/5093157/";
     private static final String ADD_EMP_XPATH="//button[@id='act_primary']";
     private static final String EDIT_DETAILS_XPATH="//a[contains(text(),'Edit Details')]";
     private static final String PHOTO_UPLOAD_XPATH="//input[@id='fileupload']";
@@ -24,7 +24,7 @@ public class EditStaff {
     public static void clickEditDetails(WebDriver driver) {
         getEditDetails(driver).click();
     }
-    // zika slika
+
     public static WebElement getPhotoUpload(WebDriver driver) {
         return driver.findElement(By.xpath(PHOTO_UPLOAD_XPATH));
     }

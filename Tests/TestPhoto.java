@@ -18,7 +18,7 @@ public class TestPhoto {
             Home.Login(driver, "mayaj93@gmail.com", "maja123");
             Thread.sleep(3000);
 
-            String putanja = "C:\\Users\\Nenad\\Desktop\\New folder (2)";
+            String putanja = "\"C:\\Users\\Nenad\\Desktop\\New folder (2)\\pngwing.com.png\"";
             Profile.clickProfile(driver);
             Profile.clickSettings(driver);
             Thread.sleep(3000);
