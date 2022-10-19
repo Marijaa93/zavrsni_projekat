@@ -11,6 +11,7 @@ import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
+import java.time.Duration;
 import java.util.concurrent.TimeUnit;
 
 public class Home {
@@ -100,7 +101,7 @@ public class Home {
 
     public static void Login(WebDriver driver, String email, String password) {
         driver.get(Home.URL);
-        driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
         driver.manage().window().maximize();
         getLogin(driver).click();
         inputEmail(driver, email);
